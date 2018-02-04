@@ -1,0 +1,14 @@
+container:
+  image: cirrusci/bazel:0.10.0
+  cpu: 4
+  memory: 12G
+
+test_task:
+  test_script: |
+    bazel --batch test \
+      --config=ci \
+      --test_tag_filters=-dev \
+      --spawn_strategy=remote \
+      --genrule_strategy=remote \
+      --remote_rest_cache=http://$CIRRUS_HTTP_CACHE_HOST \
+      //...

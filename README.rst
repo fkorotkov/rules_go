@@ -3,6 +3,7 @@ Go rules for Bazel_
 
 .. All external links are here
 .. _Bazel: https://bazel.build/
+.. |cirrus| image:: https://cirrus-ci.com/github/bazelbuild/rules_go.svg?branch=master
 .. |travis| image:: https://travis-ci.org/bazelbuild/rules_go.svg?branch=master
   :target: https://travis-ci.org/bazelbuild/rules_go
 .. |jenkins| image:: http://ci.bazel.io/buildStatus/icon?job=PR/rules_go
@@ -30,11 +31,11 @@ Go rules for Bazel_
 
 .. ;; And now we continue with the actual content
 
-======== =========
-Travis   Jenkins
-======== =========
-|travis| |jenkins|
-======== =========
+======== ========= ============
+Cirrus   Jenkins   Travis MacOs
+======== ========= ============
+|cirrus| |jenkins| |travis|
+======== ========= ============
 
 Announcements
 -------------
